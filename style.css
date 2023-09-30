@@ -1,0 +1,487 @@
+
+
+/* This is universal selector applicable for all */
+* {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          scroll-behavior: smooth;
+}
+
+
+body {
+          background-color: rgb(3, 18, 32);
+          min-height: 100vh;
+}
+
+
+/* This is navigation bar */
+header {
+          top: 0;
+          left: 0;
+          position: fixed;
+          background-color: rgb(7, 36, 63);
+          width: 100%;
+          height: 100px;
+          padding: 20px 20px;  /* this means, 20px top-bottom & 120px left-right  */
+          display: flex;
+          justify-content: space-between;
+          text-align: center;
+          z-index: 100;
+          /* font-size: 20px; */
+          overflow: none;
+}
+
+
+header h1 a{
+          color: whitesmoke;
+          text-shadow: 0 0 20px white;
+          margin-left: 20px;
+          font-size: 50px;
+}
+
+
+header h1 a:hover{
+          text-shadow: 0 0 10px cyan,
+          0 0 20px cyan,
+          0 0 30px cyan,
+          0 0 40px cyan,
+          0 0 50px cyan;
+}
+
+
+nav {
+          justify-content: space-between;
+          margin-right: 100px;
+          margin-top: 20px;
+          font-size: 20px;
+}
+
+
+nav a{
+          padding-left: 20px;
+          color: whitesmoke;
+          /* text-shadow: 0 0 20px white; */     
+}
+
+
+nav a:hover {
+          color: aqua;
+          text-shadow: 0 0 10px cyan,
+          0 0 20px cyan,
+          0 0 30px cyan,
+          0 0 40px cyan,
+          0 0 50px cyan;
+}
+
+
+/* this is for all section */
+section {
+          min-height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: rgb(2, 18, 45);
+          /* font-size: 50px; */
+          color: aliceblue;
+}
+
+section:nth-child(odd){
+          background: rgb(2, 47, 75);
+}
+
+
+/* this is for home section */
+.Introduction{
+          padding-right: 100px
+}
+
+
+#name{
+          color: aqua;
+          font-size: 50px;
+          text-shadow: 0 0 20px white;
+}
+
+#name:hover{
+          color: white;
+          text-shadow: 0 0 10px cyan,
+          0 0 20px cyan,
+          0 0 30px cyan,
+          0 0 40px cyan,
+          0 0 50px cyan;
+
+}
+
+
+#role{
+          color: aqua;
+          font-family: sans-serif;
+          -webkit-text-fill-color: white;
+          -webkit-text-stroke-width: 1px;
+          font-size: 30px;       
+}
+
+#role:hover{
+          color: white;
+          text-shadow: 0 0 10px cyan,
+          0 0 20px cyan,
+          0 0 30px cyan,
+          0 0 40px cyan,
+          0 0 50px cyan;
+
+}
+
+.resume{
+          margin-top: 20px;
+          padding-top: 6px;
+          height: 40px;
+          width: 180px;
+          border-radius: 10px;
+          background-color: rgb(55, 208, 208);
+}
+
+.resume:hover{
+          box-shadow: 0 0 10px cyan,
+          0 0 20px cyan,
+          0 0 30px cyan,
+          0 0 40px cyan,
+          0 0 50px cyan;
+
+}
+
+.resume a{
+          font-size: 20px;
+          /* align-items: center; */
+}
+
+
+.resume a:hover{
+          /* color: rgb(2, 18, 45); */
+          color: rgb(119, 253, 253);
+          /* align-items: center; */
+}
+
+
+.btn-box a{
+          padding-left: 10px;
+          text-shadow: 0 0 20px white;
+          font-size: 20px;
+          color: whitesmoke;
+}
+
+
+.btn-box a:hover{
+          color: aqua;
+}
+
+/* for repulsion */
+.repulsion{
+          height: 350px;
+          width: 350px;
+          border-radius: 50%;
+          border: 1px solid white;
+          transition: 0.7s;
+          animation-name: ripples;
+          animation-duration: 3.5s;
+          animation-iteration-count: infinite;
+          animation-fill-mode: both;
+          box-shadow: 0 0 60px white;
+}
+
+
+.repulsion img{
+          height: 350px;
+          width: 350px;
+          border-radius: 50%;
+}
+
+.repulsion img:hover{
+          box-shadow: 0 0 10px cyan,
+          0 0 20px cyan,
+          0 0 30px cyan,
+          0 0 40px cyan,
+          0 0 50px cyan;
+}
+
+
+@keyframes ripples{
+          0% {
+                    box-shadow: 0 0 0 0 #fff4,
+                              0 0 0 0 #fff4;
+          }
+
+          80% {
+                    box-shadow: 0 0 0 20px #fff4,
+                              0 0 0 40px #fff4;
+          }
+
+          100% {
+                    box-shadow: 0 0 0 20px #fff0,
+                              0 0 0 40px #fff0;
+          }
+}
+
+/* this is for skill section */
+.programs h1{
+          margin-bottom: 150px;
+          font-size: 50px;
+          color: white;
+          text-shadow: 0 0 20px white;     
+}
+
+.programs h1:hover{
+          color: white;
+          text-shadow: 0 0 30px white,
+          0 0 20px cyan,
+          0 0 30px cyan,
+          0 0 40px cyan,
+          0 0 50px cyan;      
+}
+
+.logos1{
+          margin-bottom: 100px;
+          
+}
+
+.html, .css, .js{
+          height: 150px;
+          width: 150px;
+          margin-left: 40px;
+          /* margin-left: 100px; */
+          border-radius: 50%;
+          box-shadow: 0 0 20px white;
+}
+
+.java{
+          height: 147px;
+          width: 147px;
+          margin-left: 40px;
+          border: 8px solid rgb(2, 47, 75);
+          border-radius: 50%;
+          box-shadow: 0 0 20px white;
+}
+
+.html:hover{
+          box-shadow: 0 0 10px white,
+                    0 0 20px white,
+                    0 0 30px white,
+                    0 0 40px white,
+                    0 0 50px white;
+}
+
+
+.css:hover{
+          box-shadow: 0 0 10px white,
+                    0 0 20px white,
+                    0 0 30px white,
+                    0 0 40px white,
+                    0 0 50px white;
+}
+
+
+.js:hover{
+          box-shadow: 0 0 10px white,
+                    0 0 20px white,
+                    0 0 30px white,
+                    0 0 40px white,
+                    0 0 50px white;
+}
+
+
+.java:hover{
+          box-shadow: 0 0 10px white,
+                    0 0 20px white,
+                    0 0 30px white,
+                    0 0 40px white,
+                    0 0 50px white;
+}
+
+/* this for project section */
+.projects h1{
+          margin-top: 80px;
+          font-size: 50px;
+          text-shadow: 0 0 20px white;
+}
+
+.projects h1:hover{
+          color: white;
+          text-shadow: 0 0 10px cyan,
+          0 0 20px cyan,
+          0 0 30px cyan,
+          0 0 40px cyan,
+          0 0 50px cyan;
+}
+
+
+
+.slider {
+          height: 500px;
+          width: 800px;
+          border-radius: 10px;
+          overflow: hidden;
+          margin-top: 30px;
+}
+
+.slides {
+          width: 500%;
+          height: 500px;
+          display: flex;
+}
+
+.slides input {
+          display: none;
+}
+
+.slide {
+          transition: 2s;
+}
+
+.slide img {
+          width: 800px;
+          height: 500px;
+}
+
+/* for manual btn */
+.navigation-manual {
+          position: absolute;
+          width: 800px;
+          margin-top: -40px;
+          display: flex;
+          justify-content: center;
+}
+
+.manual-btn {
+          border: 2px solid cyan;
+          padding: 5px;
+          border-radius: 10px;
+          cursor: pointer;
+          transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+          margin-right: 40px;
+}
+
+
+.manual-btn:hover {
+          background: cyan;
+}
+
+
+#radio1:checked ~ .first {
+          margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+          margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+          margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+          margin-left: -60%;
+}
+
+/* for automatic btn */
+.navigation-auto {
+          position: absolute;
+          width: 800px;
+          /* margin-top: 460px; */
+          margin-top: 460px;
+          display: flex;
+          justify-content: center;
+}
+
+.navigation-auto div {
+          border: 2px solid cyan;
+          padding: 5px;
+          border-radius: 10px;
+          transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+          margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+          background-color: cyan;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+          background-color: cyan;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+          background-color: cyan;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+          background-color: cyan;
+}
+
+
+/* this for Contact section */
+center h1{
+          font-size: 50px;
+          text-shadow: 0 0 20px white;
+          
+}
+
+center h1:hover{
+          color: white;
+          text-shadow: 0 0 10px cyan,
+          0 0 20px cyan,
+          0 0 30px cyan,
+          0 0 40px cyan,
+          0 0 50px cyan;
+}
+
+.logos2{
+          margin-top: 150px;
+
+}
+
+
+
+.fb, .tw, .lkdn, .git{
+          height: 150px;
+          width: 150px;
+          border-radius: 50%;
+          box-shadow: 0 0 20px white;
+          margin-left: 40px;
+}
+
+.fb:hover{
+          box-shadow: 0 0 10px white,
+                    0 0 20px white,
+                    0 0 30px white,
+                    0 0 40px white,
+                    0 0 50px white;
+}
+
+.tw:hover{
+          box-shadow: 0 0 10px white,
+                    0 0 20px white,
+                    0 0 30px white,
+                    0 0 40px white,
+                    0 0 50px white;
+}
+
+.lkdn:hover{
+          box-shadow: 0 0 10px white,
+                    0 0 20px white,
+                    0 0 30px white,
+                    0 0 40px white,
+                    0 0 50px white;
+}
+
+.git:hover{
+          box-shadow: 0 0 10px white,
+                    0 0 20px white,
+                    0 0 30px white,
+                    0 0 40px white,
+                    0 0 50px white;
+}
